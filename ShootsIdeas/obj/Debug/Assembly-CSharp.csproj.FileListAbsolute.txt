@@ -1,0 +1,76 @@
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Assembly-CSharp.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\nunit.framework.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEditor.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.UI.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.Cecil.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\ExCSS.Unity.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.DataContract.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.CecilTools.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEditor.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.UI.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\nunit.framework.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\obj\Debug\Assembly-CSharp.dll
+C:\_VMWARE Luke\VMWare Luke\_GAME_PROJECTS\Unity Projects\ShootsIdeas\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.HoloLens.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.Purchasing.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.TestRunner.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.Timeline.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.Cecil.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\ExCSS.Unity.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEditor.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.TestRunner.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\nunit.framework.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.Timeline.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.HoloLens.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+C:\Users\Luke\GitFolder\ShootsIdeas\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Luke\GitFolder\ShootsIdeas\obj\Debug\Assembly-CSharp.dll
+C:\Users\Luke\GitFolder\ShootsIdeas\obj\Debug\Assembly-CSharp.pdb

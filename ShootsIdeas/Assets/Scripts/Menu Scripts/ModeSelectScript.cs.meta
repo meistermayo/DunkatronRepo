@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 9efcff1be8d0689469a01ee0d9137778
+timeCreated: 1513876468
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - clipSwitch: {fileID: 8300000, guid: fa533eb272915414fa514cb331f70798, type: 3}
+  - clipSelect: {fileID: 8300000, guid: 98d44bfb12fe35447a0ea24de1a593c1, type: 3}
+  - clipDeselect: {fileID: 8300000, guid: 0bd64aafff355a446a41bcd58cdc68c7, type: 3}
+  - canvasText: {instanceID: 0}
+  - descText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

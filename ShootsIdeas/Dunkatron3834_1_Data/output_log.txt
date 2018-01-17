@@ -1,0 +1,36 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 770 (ID=0x1184)
+    Vendor:   NVIDIA
+    VRAM:     2017 MB
+    Driver:   23.21.13.8813
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+Platform assembly: C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Luke\GitFolder\ShootsIdeas\Dunkatron3834_1_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.222140 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.259736 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1694.
+Total: 0.917243 ms (FindLiveObjects: 0.065316 ms CreateObjectMapping: 0.058683 ms MarkObjects: 0.784568 ms  DeleteObjects: 0.007909 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 2cb4 -> priority: 1 
+  Thread -> id: 17b8 -> priority: 1 
+  Thread -> id: 17e8 -> priority: 1 
+  Thread -> id: 2d74 -> priority: 1 
