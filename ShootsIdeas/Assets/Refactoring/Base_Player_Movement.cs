@@ -62,7 +62,7 @@ public class Base_Player_Movement : Base_Movement
 		if (h == 0f && v == 0f) {
 			mBody.velocity = Vector2.ClampMagnitude (mBody.velocity, mBody.velocity.magnitude * move_increment);
 		} else 
-		mBody.velocity = Vector2.ClampMagnitude (mBody.velocity + (Vector2.right * h + Vector2.up * v) * move_increment, move_speed*move_mult);
+			mBody.velocity = Vector2.ClampMagnitude (mBody.velocity + (Vector2.right * h + Vector2.up * v) * move_increment, move_speed*move_mult*move_mult_internal);
 	}
 
 	void CheckMoveMult()
@@ -134,6 +134,7 @@ public class Base_Player_Movement : Base_Movement
 	public void ResetMovementValues()
 	{
 		move_mult = 1f;
+		move_mult_internal = 1f;
 	}
 
 	public void AddMovement(float value)

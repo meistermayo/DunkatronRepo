@@ -37,9 +37,9 @@ public class Sniper_Weapon : Base_Weapon {
 	{
 		GlobalAudioManager.Instance.PlaySound (laserSound);
 		laserSprite.enabled = true;
-		movementScript.AddMovement (-moveSpeedReduction);
-		movementScript.ResetMovementValues ();
+		movementScript.SetMoveMultInternal (moveSpeedReduction);
 		yield return new WaitForSeconds (chargeTime);
+		movementScript.ResetMovementValues ();
 		//PlayFX();
 		CreateBullet (rH,rV);
 		currentBullet.transform.parent = transform;
@@ -50,6 +50,7 @@ public class Sniper_Weapon : Base_Weapon {
 	public override void ResetCooldown ()
 	{
 		base.ResetCooldown ();
+		movementScript.ResetMovementValues ();
 		StopCoroutine ("Charge");
 		laserSprite.enabled = false;
 	}
