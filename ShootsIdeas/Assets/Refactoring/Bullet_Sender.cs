@@ -22,6 +22,7 @@ public class Bullet_Sender : Base_Bullet
 		if (otherHealth!= null) {
 			if (otherHealth.GetPlayerTag().Id != id)
 			if (otherHealth.GetPlayerTag().Team == 0 || otherHealth.GetPlayerTag().Team != team)
+			if (canDamage)
 				CallSender ();
 		}
 		base.OnTriggerEnter2D (other);

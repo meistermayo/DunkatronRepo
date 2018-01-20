@@ -6,6 +6,7 @@ public class PickupRespawn : MonoBehaviour {
 	Collider2D mCollider;
 	public bool active = true;
 	public float duration;
+	[SerializeField] float initialDuration;
 	ParticleSystem partSys;
 	[SerializeField] AudioClip audio;
 	[SerializeField] GameObject aButton;
@@ -14,18 +15,21 @@ public class PickupRespawn : MonoBehaviour {
 	{
 		partSys = GetComponent<ParticleSystem> ();
 		if (!active) {
-			StartRespawnTimer ();
+			if (initialDuration == 0f)
+				initialDuration = duration;
+			StartIniRespawnTimer ();
 		}
 		mCollider = GetComponent<Collider2D> ();
 	}
 
-	IEnumerator Respawn(float frames)
+	IEnumerator Respawn(float frames, bool sound)
 	{
 		SetAButton (false);
 		if (GetComponentInChildren<Light> () != null) {
 			GetComponentInChildren<Light> ().enabled = false;
 		}
-		GlobalAudioManager.Instance.PlaySound (audio);
+		if (sound)
+			GlobalAudioManager.Instance.PlaySound (audio);
 		if (partSys != null)
 			partSys.Stop ();
 		active = false;
@@ -50,7 +54,15 @@ public class PickupRespawn : MonoBehaviour {
 		if (duration < 0f)
 			Destroy (gameObject);
 		else
-			StartCoroutine (Respawn (60f * duration));
+			StartCoroutine (Respawn (60f * duration,true));
+	}
+
+	public void StartIniRespawnTimer()
+	{
+		if (duration < 0f)
+			Destroy (gameObject);
+		else
+			StartCoroutine (Respawn (60f * initialDuration,false));
 	}
 
 	public void SetAButton(bool _on)

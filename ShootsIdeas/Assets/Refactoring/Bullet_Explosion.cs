@@ -67,7 +67,10 @@ public class Bullet_Explosion : Base_Bullet
 		//DAMAGE
 		float maxDist = collider.radius * transform.localScale.x;
 		float dist = Vector3.Distance (transform.position, otherHealth.transform.position);
+		float value = (maxDist - dist) / maxDist;
 
+		if (value <= 0f)
+			return;
 		{
 			Rigidbody2D otherBody = otherHealth.GetComponent<Rigidbody2D> ();
 
@@ -75,14 +78,11 @@ public class Bullet_Explosion : Base_Bullet
 			otherBody.AddForce (diff, ForceMode2D.Impulse);
 		}
 
-		if ((maxDist - dist) / maxDist <= 0f)
-			return;
-		
 		int _id = id;
 		if (otherHealth.GetPlayerTag ().Id == id)
 			_id = -1;
 		
-		otherHealth.TakeDamage (damage * ((maxDist - dist)/maxDist), _id, team);
+		otherHealth.TakeDamage (damage * (value), _id, team);
 		excludeObjects.Add (otherHealth.gameObject);
 	}
 }
