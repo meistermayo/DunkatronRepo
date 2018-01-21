@@ -116,7 +116,7 @@ public class Base_Weapon : PlayerScript
 
 	public virtual void ResetCooldown()
 	{
-		StopCoroutine ("Cooldown");
+		StopAllCoroutines ();
 		can_attack = true;
 	}
 
