@@ -264,8 +264,9 @@ public class RoomController_Refactored : MonoBehaviour {
 			IniMenuSkin ();
 			break;
 		case MENU.WEAPON:
-			DeselectColor ();
-			IniMenuColor ();
+                IniMenuSkin();
+                //DeselectColor ();
+			//IniMenuColor ();
 			break;
 		}
 		pointerIndex = 0;
