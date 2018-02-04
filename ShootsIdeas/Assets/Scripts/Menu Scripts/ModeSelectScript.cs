@@ -20,9 +20,11 @@ public class ModeSelectScript : MonoBehaviour {
 	int minPlayer=3;
 	// Use this for initialization
 
-	void Start () {
-		GlobalAudioManager.Instance.PlayMusic (music);
-		GameManager.gameMode = GAMEMODE.PVP;
+	void Start ()
+    {
+        GlobalAudioManager.Instance.PlayMusic(music);
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.SELECT_MAP);
+        GameManager.gameMode = GAMEMODE.PVP;
 		//SceneManager.LoadScene ("pvpScene");
 		v = new float[4];
 		lv = new float[4];
@@ -82,7 +84,8 @@ public class ModeSelectScript : MonoBehaviour {
 			
 			if (a [i]) {
 				GlobalAudioManager.Instance.PlaySound (clipSelect);
-				if (playerPos [i] == 5) {
+                GlobalAudioManager.Instance.PlayRobotVoice((GlobalAudioManager.ROBOTCLIP)(((int)GlobalAudioManager.ROBOTCLIP.MAP_CLASSIC)+playerPos[i]));
+                if (playerPos [i] == 5) {
 					GameManager.player_in [i] = false;
 					player_total--;
 					playerText[i] = "";

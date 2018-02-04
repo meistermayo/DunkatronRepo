@@ -10,6 +10,8 @@ public class PickupRespawn : MonoBehaviour {
 	ParticleSystem partSys;
 	[SerializeField] AudioClip audio;
 	[SerializeField] GameObject aButton;
+    [SerializeField] GlobalAudioManager.ROBOTCLIP robotClip;
+    [SerializeField] bool playRobotClip;
 
 	void Awake()
 	{
@@ -25,6 +27,8 @@ public class PickupRespawn : MonoBehaviour {
 	IEnumerator Respawn(float frames, bool sound)
 	{
 		SetAButton (false);
+        if (playRobotClip)
+            GlobalAudioManager.Instance.PlayRobotVoice(robotClip);
 		if (GetComponentInChildren<Light> () != null) {
 			GetComponentInChildren<Light> ().enabled = false;
 		}

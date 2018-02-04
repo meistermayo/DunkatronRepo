@@ -37,5 +37,6 @@ public class BulletReflector : MonoBehaviour {
 			bullet.SetInfo (parent.Id, parent.Team);
 		
 		enemies.Enqueue (other.gameObject.GetInstanceID ());
+        bullet.ResetKillFlag(Base_Health.KILL_FLAGS.REFLECT);
 	}
 }

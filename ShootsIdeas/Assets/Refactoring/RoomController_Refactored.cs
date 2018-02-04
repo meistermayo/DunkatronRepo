@@ -65,10 +65,14 @@ public class RoomController_Refactored : MonoBehaviour {
 	MENU menu = MENU.NONE;
 	public static string[] globalPlayerAnimators;
 	public static GameObject[] globalPlayerWeapons;
+    static int playnoise;
 
 
 	void Awake()
 	{
+        if (playnoise % 4 == 0)
+            GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.TITLE);
+        playnoise++;
 		players_ready = 0;
 		players_total = 0;
 		if (GameManager.player_in == null)
@@ -274,6 +278,7 @@ public class RoomController_Refactored : MonoBehaviour {
 
 	void IniMenuSkin()
 	{
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.SELECT_CHARACTER);
 		myInfoGameObjects [0].SetActive (true);
 		myInfoGameObjects [1].SetActive (true);
 		titleCanvas.SetActive (false);
@@ -291,8 +296,9 @@ public class RoomController_Refactored : MonoBehaviour {
 
 	void IniMenuWeapon()
 	{
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.SELECT_WEAPON);
 		menu = MENU.WEAPON;
-		currentOptions = playerWeapons;
+        currentOptions = playerWeapons;
 		spriteRenderer.color = Color.white;
 	}
 
@@ -340,8 +346,9 @@ public class RoomController_Refactored : MonoBehaviour {
 
 	public void SetReady()
 	{
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.PLAYER_READY);
 		if (GameManager.player_in == null)GameManager.player_in = new bool[4];
-		GameManager.player_in [id] = true;
+        GameManager.player_in [id] = true;
 
 		players_ready++;
 		Destroy (player);

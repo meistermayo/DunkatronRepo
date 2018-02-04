@@ -25,6 +25,8 @@ public class Base_Bullet : MonoBehaviour {
 	protected Rigidbody2D mBody;
 	protected Animator animator;
 
+    [SerializeField] protected Player_Health.KILL_FLAGS killFlag;
+
 	public virtual void Awake()
 	{
 		animator = GetComponent<Animator> ();
@@ -81,7 +83,8 @@ public class Base_Bullet : MonoBehaviour {
 	{
 		if (!canDamage)
 			return;
-		//DAMAGE
+        //DAMAGE
+        otherHealth.SetKillFlag(killFlag);
 		otherHealth.TakeDamage (damage, id, team);
 		/*
 		Rigidbody2D otherBody = otherHealth.GetComponent<Rigidbody2D> ();
@@ -118,4 +121,9 @@ public class Base_Bullet : MonoBehaviour {
 		yield return new WaitForSeconds (.15f);
 		Destroy (gameObject);
 	}
+
+    public void ResetKillFlag(Base_Health.KILL_FLAGS killFlag)
+    {
+        this.killFlag = killFlag;
+    }
 }

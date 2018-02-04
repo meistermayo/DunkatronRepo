@@ -3,8 +3,23 @@ using System.Collections;
 
 public class Base_Health : PlayerScript
 {
+    public enum KILL_FLAGS
+    {
+        NONE = 0,
+        DELETE,
+        DHIT,
+        SELF,
+        KAZOO,
+        LEECH,
+        SKEEL,
+        SWOL,
+        SUPERSKEEL,
+        PINKO,
+        PIRAHNA,
+        REFLECT
+    }
 
-	[SerializeField] protected float health, health_max;
+    [SerializeField] protected float health, health_max;
 	[SerializeField] protected float armor, resistance;
 	[SerializeField] protected bool invincibilty;
 	[SerializeField] protected GameObject diePrefab;
@@ -107,5 +122,7 @@ public class Base_Health : PlayerScript
 		this.invincibilty = _invincibility;
 	}
 
+    public virtual void SetKillFlag(KILL_FLAGS killFlag)
+    { }
 }
 

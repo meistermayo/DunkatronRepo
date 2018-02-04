@@ -787,7 +787,8 @@ public class GameManager : MonoBehaviour {
 
 		}
 
-		//GameObject.FindGameObjectWithTag("QueueController").GetComponent<//ChildQueueController>().SaveChildren ();
+        //GameObject.FindGameObjectWithTag("QueueController").GetComponent<//ChildQueueController>().SaveChildren ();
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.MATCH_WIN);
 		yield return new WaitForSeconds (6f);
 		RoomMenuController.players_ready = 0;
 		RoomMenuController.players_total = 0;

@@ -18,8 +18,10 @@ public class TextTransitions : MonoBehaviour {
 		gameManager = GetComponent<GameManager> ();
 		gameManager.SetControls (false);
 		inText = true;
-		while (titleText.color.a < 1f) {
-			yield return new WaitForEndOfFrame ();
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.MATCH_READY);
+		while (titleText.color.a < 1f)
+        {
+            yield return new WaitForEndOfFrame ();
 			Color newC = titleText.color;
 			newC.a += .1f;
 			titleText.color = newC;
@@ -33,8 +35,8 @@ public class TextTransitions : MonoBehaviour {
 			newC.a -= .1f;
 			titleText.color = newC;
 		}
-
-		titleText.text = "GO!";
+        GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.MATCH_GO);
+		titleText.text = "DUNK";
 		titleText.fontSize = 64;
 
 		while (titleText.color.a < 1f) {

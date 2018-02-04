@@ -8,6 +8,8 @@ public class Player_Health : Base_Health {
 	[SerializeField] int lives=5;
 	[SerializeField] SpriteRenderer playerSprite;
 
+    public KILL_FLAGS killFlag;
+
 	public int Lives{get { return lives; }}
 
 	PlayerUI playerUI;
@@ -88,9 +90,11 @@ public class Player_Health : Base_Health {
 		NumberSpawner.Instance.CreateNumber (transform.position, Mathf.Round(damage).ToString(),numCol, .1f, 120f, 3f);
 		GetComponentInChildren<AudioManager> ().Play (1);
 		GetComponentInChildren<ParticleController> ().Play (3);
-	
-		if (health <= 0f)
-			Die (otherId);
+
+        if (health <= 0f)
+            Die(otherId);
+        else
+            killFlag = KILL_FLAGS.NONE;
 	}
 
 	
@@ -98,7 +102,9 @@ public class Player_Health : Base_Health {
 	{
 		// This behaviour contains player-specific behaviours -- needs to be refactored
 		lives--;
-
+        if (otherId == -1)
+            killFlag = KILL_FLAGS.SELF;
+        KillFlagNoise();
 		GetComponent<PlayerEnemyHandler> ().Disband (); // DIE
 		Instantiate (diePrefab, transform.position, Quaternion.identity);
 		GlobalAudioManager.Instance.PlayDeath();
@@ -171,6 +177,8 @@ public class Player_Health : Base_Health {
 
 	public override void AddStun()
 	{
+        if (health <= 0f)
+            return;
 		if (stun)
 			return;
 		stunStack++;
@@ -228,4 +236,52 @@ public class Player_Health : Base_Health {
 		stun = false;
 		playerUI.UpdateStunUI (stunStack);
 	}
+
+    void KillFlagNoise()
+    {
+        if (killFlag == KILL_FLAGS.NONE)
+            return;
+        switch (killFlag)
+        {
+            case KILL_FLAGS.DELETE:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_DELETE);
+                break;
+            case KILL_FLAGS.DHIT:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_DHIT);
+                break;
+            case KILL_FLAGS.LEECH:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_LEECH);
+                break;
+            case KILL_FLAGS.KAZOO:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_KAZOO);
+                break;
+            case KILL_FLAGS.SELF:
+                int noise = Random.Range((int)GlobalAudioManager.ROBOTCLIP.KILL_SELF_1,((int)GlobalAudioManager.ROBOTCLIP.KILL_SELF_4)+1);
+                GlobalAudioManager.Instance.PlayRobotVoice((GlobalAudioManager.ROBOTCLIP)noise);
+                break;
+            case KILL_FLAGS.SKEEL:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_SKEEL);
+                break;
+            case KILL_FLAGS.SWOL:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_SWOL);
+                break;
+            case KILL_FLAGS.SUPERSKEEL:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_SUPERSKEEL);
+                break;
+            case KILL_FLAGS.PINKO:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_PINKOPANKO);
+                break;
+            case KILL_FLAGS.PIRAHNA:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_PIRAHNA);
+                break;
+            case KILL_FLAGS.REFLECT:
+                GlobalAudioManager.Instance.PlayRobotVoice(GlobalAudioManager.ROBOTCLIP.KILL_REFLECT);
+                break;
+        }
+    }
+
+    public override void SetKillFlag(KILL_FLAGS killFlag)
+    {
+        this.killFlag = killFlag;
+    }
 }
