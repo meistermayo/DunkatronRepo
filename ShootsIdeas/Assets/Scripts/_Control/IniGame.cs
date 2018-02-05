@@ -11,8 +11,9 @@ public class IniGame : MonoBehaviour {
 		ChildQueueController.children = new Queue<Child> ();
 		ChildQueueController.child_profiles = new List<Child> ();
 		GameObject.FindGameObjectWithTag ("QueueController").GetComponent<ChildQueueController> ().LoadChildren ();
-			
-	}
+			if (Input.GetJoystickNames().Length != 0)
+                SceneManager.LoadScene("menuScene");
+    }
 
 	IEnumerator StartGame()
 	{
